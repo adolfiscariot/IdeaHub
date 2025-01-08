@@ -1,0 +1,34 @@
+@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class = "page-title">
+    <h1>Register</h1>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <form method="post" asp-action="Register">
+            <div class="form-group">
+                <label asp-for="Email">Email:</label>
+                <input asp-for="Email" class="form-control" placeholder="Type Email Here"/>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password">Password: </label>
+                <input asp-for="Password" class="form-control" placeholder="Password must contain capital letter, small letter, number & special character"/>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword">Confirm Password: </label>
+                <input asp-for="ConfirmPassword" class="form-control" placeholder="Type Password Again"/>
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="submit-button">
+                <button type="submit" class="btn btn-success">Register</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+

@@ -1,0 +1,47 @@
+@model IEnumerable<Idea>  
+
+<div class="page-header">
+    <h3>Idea List</h3>
+</div>
+
+<!-- Add idea button -->
+<div class="add-item" style="margin-right: 1em;">
+    <a href = "@Url.Action("Create", "Ideas")" class="btn btn-primary" style="display: inline-flex; align-items: center; padding: 0.5em;">
+        <i class=" bi bi-plus"></i>
+        <span>Add Idea</span>
+    </a> 
+</div>
+
+<!-- Ideas table -->
+<div class="container">
+    <div class="col-md-12">
+        <table class="table table-striped table-hover">
+            <thead>
+                <th>Idea</th>
+                <th>Content</th>
+                <th>Date</th>
+                <th>Vote</th>
+                <th>Vote Count</th>
+            </thead>
+            <tbody>
+                @foreach(var idea in Model)  
+                {
+                    <tr>
+                        <td>@idea.Name</td>
+                        <td>@idea.Content</td>
+                        <td>@idea.DateWritten</td>
+                        <td>
+                            <form method="post" asp-controller="Ideas" asp-action="Vote">
+                                <input name="ideaId" value="@idea.Id" type="hidden"/>
+                                <button type="submit" class="btn btn-outline-primary">
+                                    <i class="bi bi-hand-thumbs-up"></i>
+                                </button>
+                            </form>
+                        </td>
+                        <td>@idea.VoteCount</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
