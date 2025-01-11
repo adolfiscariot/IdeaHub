@@ -26,7 +26,7 @@ public class IdeasController : Controller
     public IActionResult Index()
     {
         //fetch ideas from database
-        var ideas = _context.Ideas.ToList();
+        var ideas = _context.Ideas.OrderByDescending(i => i.VoteCount).ToList();
         return View(ideas);
     }
 
@@ -142,6 +142,83 @@ public class IdeasController : Controller
         await _context.SaveChangesAsync();
 
         //return vote count
+        return RedirectToAction("Index");
+    }
+
+    //edit an idea
+    [HttpGet("Ideas/Edit/{ideaId}")]
+    public async Task<IActionResult> Edit(int ideaId)
+    {
+        var idea = await _context.Ideas.FindAsync(ideaId); 
+        if(idea == null)
+        {
+           _logger.LogError($"Idea with ID {ideaId} not found");
+           return NotFound(); 
+        }
+        return View(idea);
+
+    }
+
+    //commit the changes to the database
+    [HttpPost]
+    public async Task<IActionResult> ConfirmEdit(int ideaId, [Bind("Name, Content")] IdeaViewModel viewModel)
+    {   
+        //fetch idea
+        var idea = await _context.Ideas.FindAsync(ideaId);
+
+        //check if idea is null
+        if(idea == null)
+        {
+            _logger.LogError($"Idea with ID {ideaId} not found");
+            return NotFound();
+        }
+
+        //bind edited name & content to the name & content properties in the form
+        idea.Name = viewModel.Name; 
+        idea.Content = viewModel.Content;
+
+        //save changes and send user back to idea list page
+        await _context.SaveChangesAsync();
+        return RedirectToAction("Index");
+    }
+
+    [HttpGet("Ideas/Delete/{ideaId}")]
+    public async Task<IActionResult> Delete(int ideaId)
+    {
+        //find idea
+        var idea = await _context.Ideas.FindAsync(ideaId);   
+
+        //check if idea exists
+        if(idea == null)
+        {
+            _logger.LogError($"idea with id {ideaId} not found");
+            return NotFound();
+        }
+
+        //if it exists display it on the screen
+        return View(idea);        
+    }
+
+    //make deletion permanent
+    [HttpPost]
+    public async Task<IActionResult> ConfirmDelete(int ideaId)
+    {
+        var idea = await _context.Ideas.FindAsync(ideaId);
+
+        //check if idea exists
+        if(idea == null)
+        {
+            _logger.LogError($"idea with id {ideaId} doesn't exist");
+            return NotFound();
+        }
+
+        //otherwise remove idea from database
+        _context.Ideas.Remove(idea);
+
+        //save changes
+        await _context.SaveChangesAsync();
+
+        //redirect user to idea list
         return RedirectToAction("Index");
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\IdeaApp\\IdeaApp.csproj": {}
+    "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\IdeaApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\IdeaApp\\IdeaApp.csproj": {
+    "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\IdeaApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\IdeaApp\\IdeaApp.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\IdeaApp.csproj",
         "projectName": "IdeaApp",
-        "projectPath": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\IdeaApp\\IdeaApp.csproj",
+        "projectPath": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\IdeaApp.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\IdeaApp\\obj\\",
+        "outputPath": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"

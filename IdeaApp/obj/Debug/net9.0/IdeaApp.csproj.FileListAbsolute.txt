@@ -169,8 +169,6 @@ C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\ob
 C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\obj\Debug\net9.0\compressed\tbug3m0vq4-muycvpuwrr.gz
 C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\obj\Debug\net9.0\compressed\szgxhc0zha-87fc7y1x7t.gz
 C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\obj\Debug\net9.0\compressed\bsu0rpdage-mlv21k5csn.gz
-C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\obj\Debug\net9.0\compressed\tp3yk736hb-jff5sbmst6.gz
-C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\obj\Debug\net9.0\compressed\86c2459ehs-jff5sbmst6.gz
 C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -189,3 +187,6 @@ C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\ob
 C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\bin\Debug\net9.0\SendGrid.dll
 C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\bin\Debug\net9.0\StarkbankEcdsa.dll
+C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\obj\Debug\net9.0\IdeaApp.sourcelink.json
+C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\obj\Debug\net9.0\compressed\tp3yk736hb-u4ptta1lzw.gz
+C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\ideaapp\obj\Debug\net9.0\compressed\86c2459ehs-u4ptta1lzw.gz

@@ -1,15 +1,19 @@
 @{
-    ViewData["Title"] = "Landing Page";
+ViewData["Title"] = "Landing Page";
 }
-<style>.navbar {display: none}</style>
-<div class="welcome-message" >
-    <h1>Welcome To IdeaHub</h1><br/>
-    <h3>Centralize your ideas and track their progress</h3>
-</div>
-<div class="registration-buttons">
-    <form method="post" asp-action="LandingPage">
-        <button type="submit" class="btn btn-primary" name="action" value="sign-up">Create Account</button>
-        <p>Already Have One?</p>
-        <button type="submit" class="btn btn-secondary" name="action" value="log-in">Log In</button>
-    </form>
+<style>.navbar {display:none} <style>
+</style>
+
+<div class="position-absolute top-50 start-50 translate-middle "style="border:1px solid black">
+    <div class=" welcome-message" style="text-align: center;" >
+        <h1 class="jersey-10-regular">Welcome To IdeaHub</h1><br/>
+        <h3>Centralize your ideas and track their progress<br></h3>
+    </div>
+    <div class="registration-buttons" style="text-align: center;">
+        <form method="post" asp-action="LandingPage">
+            <button type="submit" class="btn btn-primary" name="action" value="sign-up">Create Account</button>
+            <p>Already Have One?</p>
+            <button type="submit" class="btn btn-secondary" name="action" value="log-in">Log In</button>
+        </form>
+    </div>
 </div>

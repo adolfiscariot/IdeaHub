@@ -1,0 +1,20 @@
+@model Idea
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post" asp-controller="Ideas" asp-action="ConfirmDelete" asp-route-ideaId=@Model.Id>
+                <div class="page-header">
+                    <h4>Delete Idea</h4>
+                </div>
+                <div class="page-content">
+                    <p>Are you sure you want to delete idea @Model.Id?</p>
+                </div>
+                <div class="buttons">
+                    <a href="@Url.Action("Index", "Ideas")" class="btn btn-secondary">Back</a>
+                    <button type="submit" class="btn btn-success">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CcRSc4NDJ3qnR7AAE/X//SRb7DH62ljGYAODV/4auMY=",
+  "Hash": "4LNFrcBMzEXrCieLxWbtfmR3B9o8TBiDUpbEDhVAut0=",
   "Source": "IdeaApp",
   "BasePath": "_content/IdeaApp",
   "Mode": "Default",
@@ -143,12 +143,12 @@
       "OriginalItemSpec": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\86c2459ehs-jff5sbmst6.gz",
+      "Identity": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\86c2459ehs-u4ptta1lzw.gz",
       "SourceId": "IdeaApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/IdeaApp",
-      "RelativePath": "IdeaApp#[.{fingerprint=jff5sbmst6}]!.bundle.scp.css.gz",
+      "RelativePath": "IdeaApp#[.{fingerprint=u4ptta1lzw}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -157,8 +157,8 @@
       "RelatedAsset": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\IdeaApp.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "r24x0511yk",
-      "Integrity": "HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4=",
+      "Fingerprint": "xg5upt47nk",
+      "Integrity": "McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\IdeaApp.bundle.scp.css"
@@ -1109,12 +1109,12 @@
       "OriginalItemSpec": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\tp3yk736hb-jff5sbmst6.gz",
+      "Identity": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\tp3yk736hb-u4ptta1lzw.gz",
       "SourceId": "IdeaApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/IdeaApp",
-      "RelativePath": "IdeaApp#[.{fingerprint=jff5sbmst6}]?.styles.css.gz",
+      "RelativePath": "IdeaApp#[.{fingerprint=u4ptta1lzw}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -1123,8 +1123,8 @@
       "RelatedAsset": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\IdeaApp.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "r24x0511yk",
-      "Integrity": "HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4=",
+      "Fingerprint": "xg5upt47nk",
+      "Integrity": "McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\IdeaApp.styles.css"
@@ -1375,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "jff5sbmst6",
-      "Integrity": "oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00=",
+      "Fingerprint": "u4ptta1lzw",
+      "Integrity": "fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\IdeaApp.styles.css"
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "jff5sbmst6",
-      "Integrity": "oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00=",
+      "Fingerprint": "u4ptta1lzw",
+      "Integrity": "fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\IdeaApp.bundle.scp.css"
@@ -3325,12 +3325,12 @@
     },
     {
       "Route": "IdeaApp.bundle.scp.css",
-      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\86c2459ehs-jff5sbmst6.gz",
+      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\86c2459ehs-u4ptta1lzw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001848428835"
+          "Quality": "0.001683501684"
         }
       ],
       "ResponseHeaders": [
@@ -3340,15 +3340,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "540"
+          "Value": "593"
         },
         {
           "Name": "ETag",
-          "Value": "\"HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4=\""
+          "Value": "\"McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Dec 2024 13:53:53 GMT"
+          "Value": "Fri, 10 Jan 2025 15:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3368,13 +3368,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00=\""
+          "Value": "W/\"fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00="
+          "Value": "sha256-fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE="
         }
       ]
     },
@@ -3389,7 +3389,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1125"
+          "Value": "1248"
         },
         {
           "Name": "Content-Type",
@@ -3397,11 +3397,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00=\""
+          "Value": "\"fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Dec 2024 13:53:53 GMT"
+          "Value": "Fri, 10 Jan 2025 15:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3411,13 +3411,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00="
+          "Value": "sha256-fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE="
         }
       ]
     },
     {
       "Route": "IdeaApp.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\86c2459ehs-jff5sbmst6.gz",
+      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\86c2459ehs-u4ptta1lzw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3426,7 +3426,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "540"
+          "Value": "593"
         },
         {
           "Name": "Content-Type",
@@ -3434,11 +3434,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4=\""
+          "Value": "\"McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Dec 2024 13:53:53 GMT"
+          "Value": "Fri, 10 Jan 2025 15:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3456,18 +3456,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4="
+          "Value": "sha256-McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk="
         }
       ]
     },
     {
-      "Route": "IdeaApp.jff5sbmst6.bundle.scp.css",
-      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\86c2459ehs-jff5sbmst6.gz",
+      "Route": "IdeaApp.styles.css",
+      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\tp3yk736hb-u4ptta1lzw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001848428835"
+          "Quality": "0.001683501684"
         }
       ],
       "ResponseHeaders": [
@@ -3477,15 +3477,152 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "540"
+          "Value": "593"
         },
         {
           "Name": "ETag",
-          "Value": "\"HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4=\""
+          "Value": "\"McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Dec 2024 13:53:53 GMT"
+          "Value": "Fri, 10 Jan 2025 15:01:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE="
+        }
+      ]
+    },
+    {
+      "Route": "IdeaApp.styles.css",
+      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\IdeaApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1248"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 15:01:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE="
+        }
+      ]
+    },
+    {
+      "Route": "IdeaApp.styles.css.gz",
+      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\tp3yk736hb-u4ptta1lzw.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "593"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 15:01:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk="
+        }
+      ]
+    },
+    {
+      "Route": "IdeaApp.u4ptta1lzw.bundle.scp.css",
+      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\86c2459ehs-u4ptta1lzw.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001683501684"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "593"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 15:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3505,13 +3642,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00=\""
+          "Value": "W/\"fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jff5sbmst6"
+          "Value": "u4ptta1lzw"
         },
         {
           "Name": "label",
@@ -3519,12 +3656,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00="
+          "Value": "sha256-fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE="
         }
       ]
     },
     {
-      "Route": "IdeaApp.jff5sbmst6.bundle.scp.css",
+      "Route": "IdeaApp.u4ptta1lzw.bundle.scp.css",
       "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\IdeaApp.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3534,7 +3671,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1125"
+          "Value": "1248"
         },
         {
           "Name": "Content-Type",
@@ -3542,11 +3679,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00=\""
+          "Value": "\"fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Dec 2024 13:53:53 GMT"
+          "Value": "Fri, 10 Jan 2025 15:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3556,7 +3693,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jff5sbmst6"
+          "Value": "u4ptta1lzw"
         },
         {
           "Name": "label",
@@ -3564,13 +3701,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00="
+          "Value": "sha256-fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE="
         }
       ]
     },
     {
-      "Route": "IdeaApp.jff5sbmst6.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\86c2459ehs-jff5sbmst6.gz",
+      "Route": "IdeaApp.u4ptta1lzw.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\86c2459ehs-u4ptta1lzw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3579,7 +3716,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "540"
+          "Value": "593"
         },
         {
           "Name": "Content-Type",
@@ -3587,11 +3724,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4=\""
+          "Value": "\"McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Dec 2024 13:53:53 GMT"
+          "Value": "Fri, 10 Jan 2025 15:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3609,7 +3746,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jff5sbmst6"
+          "Value": "u4ptta1lzw"
         },
         {
           "Name": "label",
@@ -3617,18 +3754,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4="
+          "Value": "sha256-McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk="
         }
       ]
     },
     {
-      "Route": "IdeaApp.jff5sbmst6.styles.css",
-      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\tp3yk736hb-jff5sbmst6.gz",
+      "Route": "IdeaApp.u4ptta1lzw.styles.css",
+      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\tp3yk736hb-u4ptta1lzw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001848428835"
+          "Quality": "0.001683501684"
         }
       ],
       "ResponseHeaders": [
@@ -3638,15 +3775,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "540"
+          "Value": "593"
         },
         {
           "Name": "ETag",
-          "Value": "\"HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4=\""
+          "Value": "\"McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Dec 2024 13:53:53 GMT"
+          "Value": "Fri, 10 Jan 2025 15:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3666,13 +3803,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00=\""
+          "Value": "W/\"fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jff5sbmst6"
+          "Value": "u4ptta1lzw"
         },
         {
           "Name": "label",
@@ -3680,12 +3817,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00="
+          "Value": "sha256-fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE="
         }
       ]
     },
     {
-      "Route": "IdeaApp.jff5sbmst6.styles.css",
+      "Route": "IdeaApp.u4ptta1lzw.styles.css",
       "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\IdeaApp.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3695,7 +3832,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1125"
+          "Value": "1248"
         },
         {
           "Name": "Content-Type",
@@ -3703,11 +3840,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00=\""
+          "Value": "\"fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Dec 2024 13:53:53 GMT"
+          "Value": "Fri, 10 Jan 2025 15:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3717,7 +3854,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jff5sbmst6"
+          "Value": "u4ptta1lzw"
         },
         {
           "Name": "label",
@@ -3725,13 +3862,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00="
+          "Value": "sha256-fhk0bXL6zPdVOl8PGXhgRchNMFm4cGcn96gYb0QSqFE="
         }
       ]
     },
     {
-      "Route": "IdeaApp.jff5sbmst6.styles.css.gz",
-      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\tp3yk736hb-jff5sbmst6.gz",
+      "Route": "IdeaApp.u4ptta1lzw.styles.css.gz",
+      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\tp3yk736hb-u4ptta1lzw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3740,7 +3877,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "540"
+          "Value": "593"
         },
         {
           "Name": "Content-Type",
@@ -3748,11 +3885,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4=\""
+          "Value": "\"McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Dec 2024 13:53:53 GMT"
+          "Value": "Fri, 10 Jan 2025 15:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3770,7 +3907,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jff5sbmst6"
+          "Value": "u4ptta1lzw"
         },
         {
           "Name": "label",
@@ -3778,144 +3915,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4="
-        }
-      ]
-    },
-    {
-      "Route": "IdeaApp.styles.css",
-      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\tp3yk736hb-jff5sbmst6.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001848428835"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "540"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 15 Dec 2024 13:53:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00="
-        }
-      ]
-    },
-    {
-      "Route": "IdeaApp.styles.css",
-      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\IdeaApp.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1125"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 15 Dec 2024 13:53:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-oRrKKgp7/Ky8la5JrWHPGt/7PYrCAHpZqnPtRS/UA00="
-        }
-      ]
-    },
-    {
-      "Route": "IdeaApp.styles.css.gz",
-      "AssetFile": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\Debug\\net9.0\\compressed\\tp3yk736hb-jff5sbmst6.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "540"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 15 Dec 2024 13:53:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-HelziQvHNMTlmfaOdF12nGg3axobKSculN/oGYuENI4="
+          "Value": "sha256-McQR6aAGg9VRoWIOjdpINtw2VBJD94PD0Eemk3MsVvk="
         }
       ]
     },

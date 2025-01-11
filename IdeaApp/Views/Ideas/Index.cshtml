@@ -22,6 +22,7 @@
                 <th>Date</th>
                 <th>Vote</th>
                 <th>Vote Count</th>
+                <th>Action</th>
             </thead>
             <tbody>
                 @foreach(var idea in Model)  
@@ -39,6 +40,10 @@
                             </form>
                         </td>
                         <td>@idea.VoteCount</td>
+                        <td>
+                            <a href="/Ideas/Edit/@idea.Id">Edit</a>
+                            <a href="/Ideas/Delete/@idea.Id">Delete</a>
+                        </td>
                     </tr>
                 }
             </tbody>
