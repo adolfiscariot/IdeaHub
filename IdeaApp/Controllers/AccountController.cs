@@ -136,6 +136,7 @@ namespace IdeaApp.Controllers
             //if user's data is valid
             if(ModelState.IsValid)
             {
+                _logger.LogInformation($"Remember Me: {user.RememberMe}");
                 //sign them in
                 var result = await _signInManager.PasswordSignInAsync(user.Email, user.Password, user.RememberMe, false);
 
