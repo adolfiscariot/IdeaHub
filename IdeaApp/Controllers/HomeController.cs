@@ -17,14 +17,46 @@ public class HomeController : Controller
         _context = context;
     }
 
-    public IActionResult Index()
+    public IActionResult Index(Idea idea)
     {
        var no_of_ideas = _context.Ideas.Count();
        ViewData["no_of_ideas"] = no_of_ideas; 
-        return View();
+
+        //REVIEW THIS CODE!!!!!!-------------------------
+
+        // Total number of contributors (unique authors)
+        var no_of_contributors = _context.Ideas.Select(i => i.Author).Distinct().Count();
+        ViewData["no_of_contributors"] = no_of_contributors;
+
+        // Find the top contributor
+        var topContributor = _context.Ideas
+            .GroupBy(i => i.Author) // Group by author
+            .Select(g => new 
+            { 
+                Author = g.Key, // Author name
+                IdeaCount = g.Count() // Number of ideas for this author
+            })
+            .OrderByDescending(g => g.IdeaCount) // Sort by idea count (descending)
+            .FirstOrDefault(); // Get the top contributor
+
+        // Pass the top contributor to the view
+        if (topContributor != null)
+        {
+            ViewData["topContributorName"] = topContributor.Author;
+            ViewData["topContributorIdeas"] = topContributor.IdeaCount;
+        }
+        else
+        {
+            ViewData["topContributorName"] = "No contributors yet";
+            ViewData["topContributorIdeas"] = 0;
+        }
+
+        //--------------------------------------
+        return View(); 
     }
 
-    public IActionResult Privacy()
+
+    public IActionResult Privacy() 
     {
         return View();
     }
