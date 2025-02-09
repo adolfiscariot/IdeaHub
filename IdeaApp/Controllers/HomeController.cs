@@ -19,39 +19,49 @@ public class HomeController : Controller
 
     public IActionResult Index(Idea idea)
     {
+        //show total number of ideas
        var no_of_ideas = _context.Ideas.Count();
        ViewData["no_of_ideas"] = no_of_ideas; 
 
-        //REVIEW THIS CODE!!!!!!-------------------------
-
         // Total number of contributors (unique authors)
-        var no_of_contributors = _context.Ideas.Select(i => i.Author).Distinct().Count();
-        ViewData["no_of_contributors"] = no_of_contributors;
+       var no_of_contributors = _context.Ideas.Select(i => i.Author).Distinct().Count();
+       ViewData["no_of_contributors"] = no_of_contributors;
 
-        // Find the top contributor
-        var topContributor = _context.Ideas
-            .GroupBy(i => i.Author) // Group by author
-            .Select(g => new 
-            { 
-                Author = g.Key, // Author name
-                IdeaCount = g.Count() // Number of ideas for this author
-            })
-            .OrderByDescending(g => g.IdeaCount) // Sort by idea count (descending)
-            .FirstOrDefault(); // Get the top contributor
+       //top contributor
+       var topContributor = _context.Ideas
+       .GroupBy(i => i.Author)
+       .Select(g => new
+       {
+            Author = g.Key,
+            IdeaCount = g.Count()
+       })
+       .OrderByDescending(g => g.IdeaCount)
+       .FirstOrDefault();
 
-        // Pass the top contributor to the view
-        if (topContributor != null)
+        _logger.LogInformation($"....: {topContributor}");
+        var email =topContributor.Author.Email;
+        if (email == null)
         {
-            ViewData["topContributorName"] = topContributor.Author;
-            ViewData["topContributorIdeas"] = topContributor.IdeaCount;
+            _logger.LogError("email is null");
         }
         else
         {
-            ViewData["topContributorName"] = "No contributors yet";
-            ViewData["topContributorIdeas"] = 0;
+            _logger.LogInformation($"email is {email}");
+        }
+        ViewData["email"] = email;
+        //pass top contributor to view
+        if (topContributor != null)
+        {
+            _logger.LogInformation($"The top contributor is {topContributor.Author}");
+            ViewData["topContributor"] = topContributor.Author.FirstName + " " + topContributor.Author.LastName;
+            ViewData["topContributorIdeas"] = topContributor.IdeaCount;
+        }
+        
+        else{
+            ViewData["topContributor"] = "No contributors yet";
+            ViewData["topContributorIdeas"] = 0;   
         }
 
-        //--------------------------------------
         return View(); 
     }
 

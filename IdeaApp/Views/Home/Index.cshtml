@@ -2,14 +2,19 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <div class="container border border-primary rounded position-absolute top-20 start-10 shadow p-3 mb-5 bg-white rounded" style="width: fit-content; height: fit-content;">
-        <p>Ideas Contributed</p>
+<div class="text-center position-absolute top-20 start-10" style="display: flex; gap: 10px;">
+    <div class="container border border-primary rounded shadow p-3 mb-5 bg-white rounded" style="width: fit-content; height: fit-content;">
+        <p>Total Ideas Contributed</p>
         <h2><b>@ViewData["no_of_ideas"]</b></h2>
     </div>
-    <div class="container border border-success rounded position-absolute top-20 start-10 shadow p-3 mb-5 bg-white rounded" style="width: fit-content; height: fit-content;">
+    <div class="container border border-primary rounded shadow p-3 mb-5 bg-white rounded" style="width: fit-content; height: fit-content">
+        <p>Number of Contributors</p>
+        <h2><b>@ViewData["no_of_contributors"]</b></h2>
+    </div>
+    <div class="container border border-success rounded shadow p-3 mb-5 bg-white rounded" style="width: fit-content; height: fit-content;">
         <p>Top Contributor</p>
-        <h2><b>@ViewData["no_of_ideas"]</b></h2>
+        <h4><b>@ViewData["topContributor"]</b></h4>
+        <h5>@ViewData["topContributorIdeas"] ideas</h5>
     </div>
 
 

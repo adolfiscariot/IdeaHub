@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using System.Text.Encodings.Web;
 using System.Net;
+using Microsoft.AspNetCore.Authentication;
 namespace IdeaApp.Controllers
 {
     public class AccountController : Controller
@@ -62,9 +63,11 @@ namespace IdeaApp.Controllers
                 //Create new user
                 var user = new AppUser
                 {
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
                     UserName = model.Email,
                     Email = model.Email,
-                    EmailConfirmed = true
+                    EmailConfirmed = false
                 };
 
                 //Create user in database
@@ -75,11 +78,9 @@ namespace IdeaApp.Controllers
                 {
                     //generate email confirmation token
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    _logger.LogInformation($"The generated token is {code}");
 
                     //encode token into url friendly format
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    _logger.LogInformation($"The url friendly code is {code}");
 
                     //build confirmation link for confirm email page
                     var callbackUrl = Url.Action(
@@ -94,16 +95,18 @@ namespace IdeaApp.Controllers
                     (
                         user.Email, 
                         "Confirm Your Account",
-                        $"Hello {user.Email}, \n Please <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>click here</a> to confirm your account"
+                        $"Hello {user.FirstName}, Please <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>click here</a> to confirm your account"
                     );
 
                     //Redirect based on confirmation requirement
                     if (_userManager.Options.SignIn.RequireConfirmedEmail)
                     {
+                        //send user to register confirmation page
                         return RedirectToAction("RegisterConfirmation", new{email = model.Email});
                     }
                     else
                     {
+                        //send user to homepage
                         await _signInManager.SignInAsync(user, isPersistent: true);
                         return RedirectToAction("Index", "Home");
                     }
@@ -112,7 +115,7 @@ namespace IdeaApp.Controllers
                 //else if result fails print out all the errors
                 foreach(var error in result.Errors)
                 {
-                    ModelState.AddModelError(string.Empty, "Invalid Registration Attempt");
+                    ModelState.AddModelError(string.Empty, "Registration Failed Like Arsenal's Title Challenge. Try Again.");
                 } 
             }
             //if modelstate wasnt valid redisplay the registration form
@@ -136,9 +139,21 @@ namespace IdeaApp.Controllers
             //if user's data is valid
             if(ModelState.IsValid)
             {
+                //find user
+                var appUser = await _userManager.FindByEmailAsync(user.Email);
+
+                //if user hasnt confirmed email send them back to the login page
+                if (appUser != null && !appUser.EmailConfirmed)
+                {
+                    ModelState.AddModelError(string.Empty, "Someone hasn't confirmed their email. You MUST GO (like your president) to your email and look for a confirmation email from IdeaHub");
+                    return View(user);
+                }
+                
+                //log info on whether user clicked remember me
                 _logger.LogInformation($"Remember Me: {user.RememberMe}");
+
                 //sign them in
-                var result = await _signInManager.PasswordSignInAsync(user.Email, user.Password, user.RememberMe, false);
+                var result = await _signInManager.PasswordSignInAsync(user.Email, user.Password, user.RememberMe, lockoutOnFailure:false);
 
                 //if result is a success
                 if(result.Succeeded)
@@ -155,10 +170,9 @@ namespace IdeaApp.Controllers
                     return RedirectToAction("Index", "Home");
                 }
 
-                //otherwise log error
-                ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
-                await Response.WriteAsync("<script>alert('Invalid Username or Password)</script>");
-                
+                //otherwise log error and send user back to login page
+                ModelState.AddModelError(string.Empty, "Don't tell me you've forgotten your username/password!");
+                return View(user); 
             }
             //if user's data is invalid send him back to login page
             foreach(var error in ModelState.Values.SelectMany(v => v.Errors))
@@ -168,6 +182,7 @@ namespace IdeaApp.Controllers
             return View(user);
         }
 
+        //Re
         [HttpGet]
         public async Task<IActionResult> RegisterConfirmation(string email, string returnUrl = null)
         {
@@ -177,7 +192,7 @@ namespace IdeaApp.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            //otherwise find user by email and store them in var user
+            //otherwise find user by email 
             var user = await _userManager.FindByEmailAsync(email);
 
             //if user is not found return user not found message
@@ -186,8 +201,8 @@ namespace IdeaApp.Controllers
                 return NotFound($"Unable to load user with email {email}");
             }
         
-            //otherwise pass email to the view
-            ViewData["Email"] = email;
+            //otherwise pass first name to the view
+            ViewData["FirstName"] = user.FirstName; 
             
             return View();  
         }
@@ -220,9 +235,28 @@ namespace IdeaApp.Controllers
             //log the token just to confirm its the right one
             _logger.LogInformation($"The token is {code}");
 
-            //if result succeeds send user to login page
+            //if result succeeds....
             if(result.Succeeded)
             {
+                //set email confirmed to true
+                user.EmailConfirmed = true;
+
+                //save the changes
+                var updateResult = await _userManager.UpdateAsync(user);
+
+                //if changes fail to be saved ...
+                if (!updateResult.Succeeded)
+                {   
+                    //add each error to the model state and log it too
+                    foreach (var error in updateResult.Errors)
+                    {
+                        ModelState.AddModelError(error.Code, error.Description);
+                        _logger.LogError($"Error Code {error.Code}, Error Description {error.Description}");
+                    }
+                    //send user to landing page
+                    return RedirectToAction("LandingPage");
+                }
+                //otherwise if changes are saved send user to login page
                 return RedirectToAction("Login");
             };
             

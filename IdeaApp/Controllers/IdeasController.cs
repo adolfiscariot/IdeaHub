@@ -9,22 +9,26 @@ using IdeaApp.Helpers;
 using IdeaApp.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Identity;
 
 [Authorize]
 public class IdeasController : Controller
 {
     private readonly ILogger<IdeasController> _logger;
     private readonly IdeaappDbContext _context;
+    private readonly UserManager<AppUser> _userManager;
 
-    public IdeasController(ILogger<IdeasController> logger, IdeaappDbContext context)
+    public IdeasController(ILogger<IdeasController> logger, IdeaappDbContext context, UserManager<AppUser> userManager)
     {
         _logger = logger;
         _context = context;
+        _userManager = userManager;
     }
 
     [HttpGet]
     public IActionResult Index()
     {
+        ViewData["email"] = User.Identity?.Name;
         //fetch ideas from database
         var ideas = _context.Ideas.OrderByDescending(i => i.VoteCount).ToList();
         return View(ideas);
@@ -121,7 +125,7 @@ public class IdeasController : Controller
         var voters = VoterHelper.ToList(idea.Voters);
         _logger.LogInformation("voters found");
 
-        //if user has voted, remove vote 
+        //if user has voted, remove vote and decrement vote count
         if (voters.Contains(userId))
         {
             voters.Remove(userId);
@@ -149,12 +153,17 @@ public class IdeasController : Controller
     [HttpGet("Ideas/Edit/{ideaId}")]
     public async Task<IActionResult> Edit(int ideaId)
     {
+        //fetch idea
         var idea = await _context.Ideas.FindAsync(ideaId); 
-        if(idea == null)
+
+        //if idea is null log error
+        if(idea == null) 
         {
            _logger.LogError($"Idea with ID {ideaId} not found");
            return NotFound(); 
         }
+
+        //otherwise show idea
         return View(idea);
 
     }
@@ -189,12 +198,12 @@ public class IdeasController : Controller
         var idea = await _context.Ideas.FindAsync(ideaId);   
 
         //check if idea exists
-        if(idea == null)
+        if(idea == null) 
         {
             _logger.LogError($"idea with id {ideaId} not found");
             return NotFound();
         }
-
+             
         //if it exists display it on the screen
         return View(idea);        
     }
@@ -203,6 +212,7 @@ public class IdeasController : Controller
     [HttpPost]
     public async Task<IActionResult> ConfirmDelete(int ideaId)
     {
+        //fetch idea
         var idea = await _context.Ideas.FindAsync(ideaId);
 
         //check if idea exists
@@ -210,6 +220,18 @@ public class IdeasController : Controller
         {
             _logger.LogError($"idea with id {ideaId} doesn't exist");
             return NotFound();
+        }
+
+        //fetch user id and create view data for it
+        var userId = _userManager.GetUserId(User);
+        ViewData["UserId"] = userId;
+
+
+        //check if person deleting is the author
+        if (userId != idea.UserId)
+        {
+            ModelState.AddModelError(string.Empty, $"Let this be a secret between me and you that you tried to delete {idea.Author}'s idea. Don't try again!");
+            return RedirectToAction("Index");
         }
 
         //otherwise remove idea from database

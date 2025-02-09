@@ -3062,19 +3062,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\IdeaApp.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\IdeaApp\\IdeaApp.csproj",
       "projectName": "IdeaApp",
-      "projectPath": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\IdeaApp.csproj",
+      "projectPath": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\IdeaApp\\IdeaApp.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\ideaapp\\obj\\",
+      "outputPath": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\IdeaApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"

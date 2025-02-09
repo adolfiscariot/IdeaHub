@@ -1,5 +1,11 @@
 @model IEnumerable<Idea>  
 
+@{
+    var loggedInUser = User.Identity?.Name;
+    Console.WriteLine($"The logged in user is: {loggedInUser}");
+    Console.WriteLine($"The email is: {ViewData["email"]}");
+}
+
 <div class="page-header">
     <h3>Idea List</h3>
 </div>
@@ -41,8 +47,11 @@
                         </td>
                         <td>@idea.VoteCount</td>
                         <td>
-                            <a href="/Ideas/Edit/@idea.Id">Edit</a>
-                            <a href="/Ideas/Delete/@idea.Id">Delete</a>
+                            @if(ViewData["email"] == loggedInUser)
+                            {
+                                <a href="/Ideas/Edit/@idea.Id">Edit</a>
+                                <a href="/Ideas/Delete/@idea.Id">Delete</a>
+                            }
                         </td>
                     </tr>
                 }

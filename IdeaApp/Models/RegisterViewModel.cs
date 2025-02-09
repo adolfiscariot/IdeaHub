@@ -1,10 +1,19 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json.Serialization;
 
 namespace IdeaApp.Models;
 
 public class RegisterViewModel
 {
+    [Required]
+    [DataType(DataType.Text)]
+    public string FirstName {get; set;}
+
+    [Required]
+    [DataType(DataType.Text)]
+    public string LastName {get; set;}
+
     [Required]
     [EmailAddress]
     public string Email {get; set;}

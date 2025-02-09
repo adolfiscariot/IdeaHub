@@ -24,6 +24,13 @@ public class IdeaappDbContext : IdentityDbContext<AppUser>
 
             //Primary Key
             entity.HasKey(u => u.Id);
+            
+            //Properties
+            entity.Property(u => u.FirstName)
+                .IsRequired();
+
+            entity.Property(u => u.LastName)
+                .IsRequired();
 
             //Relationships
             entity.HasMany(u => u.Ideas)

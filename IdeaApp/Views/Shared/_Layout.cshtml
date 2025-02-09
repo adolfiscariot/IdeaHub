@@ -19,7 +19,7 @@
         @{
             var path = Context.Request.Path;
 
-            if (path.Equals("/") || path.Equals("/Account/Register") || path.Equals("/Account/Login"))
+            if (path.Equals("/") || path.Equals("/Account/Register") || path.Equals("/Account/Login") || path.Equals("/Account/RegisterConfirmation"))
             {
                 await Html.RenderPartialAsync("_Navbar2");
             }
@@ -38,7 +38,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - IdeaApp - <a asp-area="" asp-controller="Home" asp-action="Privacy"></a>
+            &copy; 2025 - IdeaApp <a asp-area="" asp-controller="Home" asp-action="Privacy"></a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

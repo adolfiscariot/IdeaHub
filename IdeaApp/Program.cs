@@ -1,6 +1,8 @@
 using IdeaApp.Data;
 using IdeaApp.Models;
 using IdeaApp.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
@@ -15,7 +17,8 @@ builder.Services.AddDbContext<IdeaappDbContext>(options => {
 //Add Identity(for authentication and authorization) to our app
 builder.Services.AddIdentity<AppUser, IdentityRole>()
     .AddEntityFrameworkStores<IdeaappDbContext>()
-    .AddDefaultTokenProviders(); 
+    .AddDefaultTokenProviders()
+    .AddRoles<IdentityRole>();
 
 //configuration settings for identity
 builder.Services.Configure<IdentityOptions>(options => 
@@ -35,16 +38,17 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.SignIn.RequireConfirmedEmail = true;
 });
 
-builder.Services.AddAuthorization();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options => {
+        options.LoginPath = "/Account/Login";
+        options.Cookie.HttpOnly = true;
+        options.AccessDeniedPath = "/Account/AccessDenied";
+        options.ExpireTimeSpan = TimeSpan.FromDays(30);
+        options.LoginPath = "/Account/Login";
+        options.SlidingExpiration = true;
+    });
 
-builder.Services.ConfigureApplicationCookie(options => 
-{
-    options.Cookie.HttpOnly = true;
-    options.AccessDeniedPath = "/Account/AccessDenied";
-    options.ExpireTimeSpan = TimeSpan.FromDays(30);
-    options.LoginPath = "/Account/Login";
-    options.SlidingExpiration = true;
-});
+builder.Services.AddAuthorization();
 
 //register the iemailsender service
 builder.Services.AddTransient<IEmailSender, EmailSender>();
