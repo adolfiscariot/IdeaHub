@@ -1,0 +1,49 @@
+@using Microsoft.AspNetCore.Identity;
+@model IEnumerable<IdentityRole>
+
+@{ViewData["Title"] = "All Roles";}
+
+<h1>Roles List</h1>
+
+<!-- Add role button -->
+<div class="add-item" style="margin-right: 1em;">
+    <a href = "@Url.Action("CreateRole", "Admin")" class="btn btn-primary" style="display: inline-flex; align-items: center; padding: 0.5em;">
+        <i class=" bi bi-plus"></i>
+        <span>Add Role</span>
+    </a> 
+</div>
+
+@if (Model.Any()) {
+    <!-- Roles table -->
+    <div class="container">
+        <div class="col-md-12">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <th>Roles</th>
+                    <th>Actions</th>
+                </thead>
+                <tbody>
+                    @foreach(var role in Model)  
+                    {
+                        <tr>
+                            <td>@role.Name</td>
+                            <td>
+                                <a>Edit</a>
+                                <a>Delete</a>
+                            </td>
+                        </tr>
+                    }
+    using System.Diagnostics.Eventing.Reader;
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+else {
+<div class="container">
+    <div class="row">
+        No Roles Created
+    </div>
+</div>
+}

@@ -38,29 +38,42 @@ public class HomeController : Controller
        .OrderByDescending(g => g.IdeaCount)
        .FirstOrDefault();
 
-        _logger.LogInformation($"....: {topContributor}");
-        var email =topContributor.Author.Email;
-        if (email == null)
-        {
-            _logger.LogError("email is null");
-        }
-        else
-        {
-            _logger.LogInformation($"email is {email}");
-        }
-        ViewData["email"] = email;
-        //pass top contributor to view
         if (topContributor != null)
         {
-            _logger.LogInformation($"The top contributor is {topContributor.Author}");
+            _logger.LogInformation($"Top Contributor: {topContributor.Author}");
+
+            // Check if Author is null before accessing Email
+            if (topContributor.Author != null)
+            {
+                var email = topContributor.Author.Email;
+                if (email == null)
+                {
+                    _logger.LogError("Email is null");
+                }
+                else
+                {
+                    _logger.LogInformation($"Email is {email}");
+                }
+                ViewData["email"] = email;
+            }
+            else
+            {
+                _logger.LogError("Author is null");
+                ViewData["email"] = "No author found";
+            }
+
+            // Pass top contributor to view
             ViewData["topContributor"] = topContributor.Author.FirstName + " " + topContributor.Author.LastName;
             ViewData["topContributorIdeas"] = topContributor.IdeaCount;
         }
-        
-        else{
+        else
+        {
+            _logger.LogInformation("No contributors yet");
             ViewData["topContributor"] = "No contributors yet";
-            ViewData["topContributorIdeas"] = 0;   
+            ViewData["topContributorIdeas"] = 0;
+            ViewData["email"] = "No email found";
         }
+
 
         return View(); 
     }
