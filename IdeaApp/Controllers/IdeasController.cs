@@ -150,9 +150,14 @@ public class IdeasController : Controller
     }
 
     //edit an idea
+
     [HttpGet("Ideas/Edit/{ideaId}")]
     public async Task<IActionResult> Edit(int ideaId)
     {
+        //fetch user id
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        ViewData["userId"] = userId;
+
         //fetch idea
         var idea = await _context.Ideas.FindAsync(ideaId); 
 
@@ -163,15 +168,27 @@ public class IdeasController : Controller
            return NotFound(); 
         }
 
+        //check if logged in user is idea author
+        if (idea.UserId != userId){
+            _logger.LogWarning($"Unauthorized edit by user id: {userId}");
+            return Forbid();
+        }
+
         //otherwise show idea
         return View(idea);
 
     }
 
     //commit the changes to the database
-    [HttpPost]
+    [Authorize]
+    [HttpPut("{ideaId}")]
     public async Task<IActionResult> ConfirmEdit(int ideaId, [Bind("Name, Content")] IdeaViewModel viewModel)
     {   
+        //fetch logged in user id
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        ViewData["userId"] = userId;
+        _logger.LogInformation($"USER ID = {userId}");
+
         //fetch idea
         var idea = await _context.Ideas.FindAsync(ideaId);
 
@@ -180,6 +197,12 @@ public class IdeasController : Controller
         {
             _logger.LogError($"Idea with ID {ideaId} not found");
             return NotFound();
+        }
+
+        //check if logged in user is idea author
+        if (idea.UserId != userId){
+            _logger.LogWarning($"Unauthorized edit by user id: {userId}");
+            return Forbid();
         }
 
         //bind edited name & content to the name & content properties in the form
@@ -194,16 +217,26 @@ public class IdeasController : Controller
     [HttpGet("Ideas/Delete/{ideaId}")]
     public async Task<IActionResult> Delete(int ideaId)
     {
-        //find idea
+        //fetch user id
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        ViewData["userId"] = userId;
+
+        //find idea based on primary key ideaId
         var idea = await _context.Ideas.FindAsync(ideaId);   
 
-        //check if idea exists
+        //if idea doesn't exist print an error message
         if(idea == null) 
         {
             _logger.LogError($"idea with id {ideaId} not found");
             return NotFound();
         }
-             
+
+        //check if logged in user is idea author
+        if (idea.UserId != userId){
+            _logger.LogWarning($"Unauthorized delete attempt by user id: {userId}");
+            return Forbid();
+        }
+
         //if it exists display it on the screen
         return View(idea);        
     }
@@ -227,11 +260,12 @@ public class IdeasController : Controller
         ViewData["UserId"] = userId;
 
 
+        //VERIFY IF THIS PIECE OF CODE IS USEFUL OR IT SHOULD BE DELETED!!!
         //check if person deleting is the author
         if (userId != idea.UserId)
         {
-            ModelState.AddModelError(string.Empty, $"Let this be a secret between me and you that you tried to delete {idea.Author}'s idea. Don't try again!");
-            return RedirectToAction("Index");
+            _logger.LogWarning($"Unauthorized attempted delete by user id: {userId}");
+            return Forbid();
         }
 
         //otherwise remove idea from database

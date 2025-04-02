@@ -17,93 +17,93 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IdeaApp
 build_property.RootNamespace = IdeaApp
-build_property.ProjectDir = C:\Users\mark.mathenge\Documents\IdeaHub\IdeaHub\IdeaApp\
+build_property.ProjectDir = C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\IdeaApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\mark.mathenge\Documents\IdeaHub\IdeaHub\IdeaApp
+build_property.MSBuildProjectDirectory = C:\Users\HP\OneDrive - riarauniversity.ac.ke\Documents\vscode\IdeaApp\IdeaApp
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Account/LandingPage.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Account/LandingPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMYW5kaW5nUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Account/Login.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Account/Logout.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Account/Register.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Account/RegisterConfirmation.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Admin/CreateRole.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Admin/CreateRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlUm9sZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Admin/ListRoles.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Admin/ListRoles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdFJvbGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Home/Index.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Home/Privacy.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Ideas/Create.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Ideas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRlYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Ideas/Delete.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Ideas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRlYXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Ideas/Edit.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Ideas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRlYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Ideas/Index.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Ideas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRlYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Shared/Error.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Shared/_Navbar1.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Shared/_Navbar1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Shared/_Navbar2.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Shared/_Navbar2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/_ViewImports.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/_ViewStart.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mark.mathenge/Documents/IdeaHub/IdeaHub/IdeaApp/Views/Shared/_Layout.cshtml]
+[C:/Users/HP/OneDrive - riarauniversity.ac.ke/Documents/vscode/IdeaApp/IdeaApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-op1j4p81fk

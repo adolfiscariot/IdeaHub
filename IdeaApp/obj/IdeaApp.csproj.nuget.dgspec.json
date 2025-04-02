@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mark.mathenge\\Documents\\IdeaHub\\IdeaHub\\IdeaApp\\IdeaApp.csproj": {}
+    "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\IdeaApp\\IdeaApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mark.mathenge\\Documents\\IdeaHub\\IdeaHub\\IdeaApp\\IdeaApp.csproj": {
+    "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\IdeaApp\\IdeaApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mark.mathenge\\Documents\\IdeaHub\\IdeaHub\\IdeaApp\\IdeaApp.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\IdeaApp\\IdeaApp.csproj",
         "projectName": "IdeaApp",
-        "projectPath": "C:\\Users\\mark.mathenge\\Documents\\IdeaHub\\IdeaHub\\IdeaApp\\IdeaApp.csproj",
-        "packagesPath": "C:\\Users\\mark.mathenge\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mark.mathenge\\Documents\\IdeaHub\\IdeaHub\\IdeaApp\\obj\\",
+        "projectPath": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\IdeaApp\\IdeaApp.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\OneDrive - riarauniversity.ac.ke\\Documents\\vscode\\IdeaApp\\IdeaApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mark.mathenge\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -36,7 +40,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -86,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
